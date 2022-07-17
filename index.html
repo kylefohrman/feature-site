@@ -1,247 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/tyler-face-180x180.ico"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-    />
+  <!--CSS Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <title>Kyle Fohrman | Engineering and Design</title>
-  </head>
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/tyler-face-180x180.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
 
-  <body>
-    <!-- Navbar -->
-    <nav>
-      <h1>Kyle Fohrman</h1>
-      <ul class="navigation">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-      </ul>
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
-      </button>
-    </nav>
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Kyle Fohrman | Engineering and Design</title>
+</head>
 
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-      <img
-        src="assets/images/headshot.png"
-        alt="kyle-fohrman"
-        loading="lazy"
-        class="hero-img"
-      />
-      <div class="bio animate__animated animate__fadeInUp">
-        <h2 class="bio-title"></h2>
-        <p class="bio-text">
-          I am a software engineer and former design artist who loves to build things.
-        </p>
-      </div>
-    </section>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>Kyle Fohrman</h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+      <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+    </button>
+  </nav>
 
-    <!-- More about -->
-    <section class="more-about">
-        <h2>About Me</h2>
-        <p>
-            With a special focus on achieving lasting change in my community, I aim to learn and collaborate with others across different backgrounds and cultures. My projects range from fundraising materials to object rendering scripts. Regardless of background, however, two things are always guaranteed- <i>quality and marketability.</i>
-        </p>
-        <p>
-            My current base of operations is Seattle, Washington, where I am employed as a software development engineer for Amazon Alexa.
-        </p>
-        <p>
-            Computer science graduate from the University of Florida with a minor in Mandarin Chinese.
-        </p>
-    </section>
-
-    <!-- Skills section -->
-    <section class="skills" id="skills">
-        <h2 class="skill-header">My Top Skills</h2>
-
-        <div class="skills-wrapper">
-            <div class="first-set animate__animated animate__pulse">
-                <img
-                    src="assets/icons/java.svg"
-                    alt="java"
-                    loading="lazy"
-                    class="icon icon-card"
-                />
-                <img
-                    src="assets/icons/cpp.svg"
-                    alt="C++"
-                    loading="lazy"
-                    class="icon icon-card"
-                />
-                <img
-                    src="assets/icons/python.svg"
-                    alt="python"
-                    loading="lazy"
-                    class="icon icon-card"
-                />
-            </div>
-            <div class="second-set animate__animated animate__pulse">
-                <img
-                    src="assets/icons/sql.svg"
-                    alt="SQL"
-                    loading="lazy"
-                    class="icon icon-card"
-                />
-                <img
-                    src="assets/icons/html.svg"
-                    alt="HTML 5"
-                    loading="lazy"
-                    class="icon icon-card"
-                />
-                <img
-                    src="assets/icons/photoshop.svg"
-                    alt="photoshop"
-                    loading="lazy"
-                    class="icon icon-card"
-                />
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects section -->
-    <section class="projects" id="projects">
-      <h2 class="projects-title">Some of my Recent Projects</h2>
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <img
-            src="assets/images/Star Maker Features.png"
-            alt="star-maker-plugin"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Blender Star Plugin</h3>
-          <p class="project-details">
-            Blender add-on to create custom star-shaped planes from the primitives menu. 
-          </p>
-          <a href="https://github.com/kylefohrman/star-maker" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/Pavilion.PNG"
-            alt="computer-graphics"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Graphics Projects</h3>
-          <p class="project-details">
-            Everything from OpenGL to Photoshop.
-          </p>
-          <a href="https://www.linkedin.com/in/kfohrman/" target="_blank" class="project-link">Check it out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/buy-us-war-bonds.png"
-            alt="publications"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Publications</h3>
-          <p class="project-details">
-            By Greatreads.
-          </p>
-          <a href="https://greatreads.store/product/buy-u-s-war-bonds/" target="_blank" class="project-link">Check it out</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact section -->
-    
-
-    <!-- Social accounts - Fixed to the right -->
-    <div class="socials">
-      <a href="https://www.instagram.com/kfohrman/" target="_blank">
-        <img
-          src="assets/icons/instagram.png"
-          alt="Instagram"
-          loading="lazy"
-          class="socicon"
-        />
-      </a>
-      <a href="https://www.linkedin.com/in/kfohrman/" target="_blank">
-        <img
-          src="assets/icons/linkedin.png"
-          alt="LinkedIn"
-          loading="lazy"
-          class="socicon"
-        />
-      </a>
-      <a href="https://github.com/kylefohrman" target="_blank">
-        <img
-          src="assets/icons/github.png"
-          alt="Github"
-          loading="lazy"
-          class="socicon"
-        />
-      </a>
-      <a href="mailto:kyle@fohrman.org" target="_blank">
-        <img
-          src="assets/icons/email.png"
-          alt="Email"
-          loading="lazy"
-          class="socicon"
-        />
-      </a>
-      <a href="https://twitter.com/kyle_fohrman" target="_blank">
-        <img
-          src="assets/icons/twitter.png"
-          alt="Twitter"
-          loading="lazy"
-          class="socicon"
-        />
-      </a>
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <img src="assets/images/headshot.png" alt="kyle-fohrman" loading="lazy" class="hero-img" />
+    <div class="bio animate__animated animate__fadeInUp">
+      <h2 class="bio-title"></h2>
+      <p class="bio-text">
+        I am a software engineer and former design artist who loves to build things.
+      </p>
     </div>
-      
+  </section>
 
-    <!-- Scroll to top -->
-    <i class="scroll-up" id="scroll-up">
-      <img
-        src="assets/icons/up-arrow.svg"
-        class="socicon up-arrow"
-        alt="scroll-up"
-        />
-    </i>
+  <!-- More about -->
+  <section class="more-about">
+    <h2>About Me</h2>
+    <p>
+      Hello!
+    </p>
 
-    <!-- Footer section -->
-    <footer>
-      <p class="copy">&copy; Copyright 2021</p>
-      <p class="copy">Built with &#x2661; by <a href="https://www.linkedin.com/in/kfohrman/" target="_blank">Kyle Fohrman</a></p>
-    </footer>
+    <p>
+      My name is Kyle Fohrman- a software engineer based in Seattle, Washington with experience in Python, C++, and SQL-based
+      web and applications development.
+    </p>
 
-    <!-- Website scripts -->
-    <script src="assets/script/script.js"></script>
+    <p>
+      Currently working at Amazon as part of the Alexa AI team.
+    </p>
+  </section>
 
-    <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+  <!-- Skills section -->
+  <section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img src="assets/icons/java.svg" alt="java" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/cpp.svg" alt="C++" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/python.svg" alt="python" loading="lazy" class="icon icon-card" />
+      </div>
+      <div class="second-set animate__animated animate__pulse">
+        <img src="assets/icons/sql.svg" alt="SQL" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/html.svg" alt="HTML 5" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/photoshop.svg" alt="photoshop" loading="lazy" class="icon icon-card" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects section -->
+  <section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img src="assets/images/Star Maker Features.png" alt="star-maker-plugin" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Blender Star Plugin</h3>
+        <p class="project-details">
+          Blender add-on to create custom star-shaped planes from the primitives menu.
+        </p>
+        <a href="https://github.com/kylefohrman/star-maker" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img src="assets/images/Pavilion.PNG" alt="computer-graphics" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Graphics Projects</h3>
+        <p class="project-details">
+          Everything from OpenGL to Photoshop.
+        </p>
+        <a href="https://www.linkedin.com/in/kfohrman/" target="_blank" class="project-link">Check it out</a>
+      </div>
+      <div class="project-container project-card">
+        <img src="assets/images/buy-us-war-bonds.png" alt="publications" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Publications</h3>
+        <p class="project-details">
+          By Greatreads.
+        </p>
+        <a href="https://greatreads.store/product/buy-u-s-war-bonds/" target="_blank" class="project-link">Check it
+          out</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+
+
+  <!-- Social accounts - Fixed to the right -->
+  <div class="socials">
+    <a href="https://www.instagram.com/kfohrman/" target="_blank">
+      <img src="assets/icons/instagram.png" alt="Instagram" loading="lazy" class="socicon" />
+    </a>
+    <a href="https://www.linkedin.com/in/kfohrman/" target="_blank">
+      <img src="assets/icons/linkedin.png" alt="LinkedIn" loading="lazy" class="socicon" />
+    </a>
+    <a href="https://github.com/kylefohrman" target="_blank">
+      <img src="assets/icons/github.png" alt="Github" loading="lazy" class="socicon" />
+    </a>
+    <a href="mailto:kyle@fohrman.org" target="_blank">
+      <img src="assets/icons/email.png" alt="Email" loading="lazy" class="socicon" />
+    </a>
+    <a href="https://twitter.com/kyle_fohrman" target="_blank">
+      <img src="assets/icons/twitter.png" alt="Twitter" loading="lazy" class="socicon" />
+    </a>
+  </div>
+
+
+  <!-- Scroll to top -->
+  <i class="scroll-up" id="scroll-up">
+    <img src="assets/icons/up-arrow.svg" class="socicon up-arrow" alt="scroll-up" />
+  </i>
+
+  <!-- Footer section -->
+  <footer>
+    <p class="copy">&copy; Copyright 2021</p>
+    <p class="copy">Built with &#x2661; by <a href="https://www.linkedin.com/in/kfohrman/" target="_blank">Kyle
+        Fohrman</a></p>
+  </footer>
+
+  <!-- Website scripts -->
+  <script src="assets/script/script.js"></script>
+
+  <!-- Ion icons scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
