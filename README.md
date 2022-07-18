@@ -1,2 +1,2 @@
 # feature-site
-Portfolio webpage, hosted at [fohrman.org](www.fohrman.org)
+Portfolio webpage, hosted at www.fohrman.org
