@@ -224,7 +224,7 @@ nav ul li {
   flex-direction: column;
   position: fixed;
   right: 1%;
-  bottom: 15%;
+  bottom: 25%;
 }
 
 .socicon {
@@ -319,6 +319,7 @@ footer {
   .socicon {
     width: 2rem;
     height: 2rem;
+    margin: 20%;
   }
 
   .projects-container {
