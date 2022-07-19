@@ -33,6 +33,14 @@ function selectionToggle(p1) {
         collection[i].style.backgroundColor = '#FFFFFF';
     }
 
+    collection = document.getElementsByClassName('skill-button');
+
+    for (let i = 0; i < collection.length; i++) {
+        collection[i].style.backgroundColor = '#3C99DC';
+        collection[i].style.color = "#FFFFFF";
+        collection[i].style.border = "none";
+    }
+
     let selection = document.getElementsByClassName(p1);
 
     for (let i = 0; i < selection.length; i++) {
@@ -41,4 +49,37 @@ function selectionToggle(p1) {
             selection[i].style.backgroundColor = '#FFFF00';
         }
     }
+
+    buttonSelection = "button-skills";
+    switch (p1) {
+        case 'skill-card':
+            buttonSelection = "button-skills";
+            break;
+        case 'programming':
+            buttonSelection = "button-programming";
+            break;
+        case 'webdev':
+            buttonSelection = "button-webdev";
+            break;
+        case 'design':
+            buttonSelection = "button-design";
+            break;
+        case 'development':
+            buttonSelection = "button-enterprise";
+            break;
+        case 'database':
+            buttonSelection = "button-databases";
+            break;
+        case 'research':
+            buttonSelection = "button-research";
+            break;
+        case 'zombies':
+            buttonSelection = "button-zombie";
+            break;
+    }
+
+    let button = document.getElementById(buttonSelection);
+    button.style.backgroundColor = "#FFFFFF";
+    button.style.color = "#000000";
+    button.style.border = "2px solid black";
 }
