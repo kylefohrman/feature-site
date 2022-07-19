@@ -25,7 +25,10 @@ navLink.forEach((link) =>
     })
 );
 
+//button selection in skills section
 function selectionToggle(p1) {
+
+    //reset skills
     let collection = document.getElementsByClassName('skill-card');
 
     for (let i = 0; i < collection.length; i++) {
@@ -33,14 +36,15 @@ function selectionToggle(p1) {
         collection[i].style.backgroundColor = '#FFFFFF';
     }
 
+    //reset buttons
     collection = document.getElementsByClassName('skill-button');
 
     for (let i = 0; i < collection.length; i++) {
         collection[i].style.backgroundColor = '#3C99DC';
         collection[i].style.color = "#FFFFFF";
-        collection[i].style.border = "none";
     }
 
+    //change skills
     let selection = document.getElementsByClassName(p1);
 
     for (let i = 0; i < selection.length; i++) {
@@ -50,6 +54,7 @@ function selectionToggle(p1) {
         }
     }
 
+    //change selected button
     buttonSelection = "button-skills";
     switch (p1) {
         case 'skill-card':
@@ -81,5 +86,4 @@ function selectionToggle(p1) {
     let button = document.getElementById(buttonSelection);
     button.style.backgroundColor = "#FFFFFF";
     button.style.color = "#000000";
-    button.style.border = "2px solid black";
 }
