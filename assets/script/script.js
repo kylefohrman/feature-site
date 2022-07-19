@@ -25,3 +25,20 @@ navLink.forEach((link) =>
     })
 );
 
+function selectionToggle(p1) {
+    let collection = document.getElementsByClassName('skill-card');
+
+    for (let i = 0; i < collection.length; i++) {
+        collection[i].style.color = '#D3D3D3';
+        collection[i].style.backgroundColor = '#FFFFFF';
+    }
+
+    let selection = document.getElementsByClassName(p1);
+
+    for (let i = 0; i < selection.length; i++) {
+        selection[i].style.color = '#000000';
+        if (p1 != "skill-card") {
+            selection[i].style.backgroundColor = '#FFFF00';
+        }
+    }
+}
