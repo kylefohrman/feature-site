@@ -246,6 +246,10 @@ nav ul li {
 }
 
 /* Graphics box */
+.graphics-header {
+  text-align: center;
+}
+
 .graphic-container {
   display: flex;
   align-items: center;
@@ -264,7 +268,7 @@ nav ul li {
 }
 
 .graphic-pic {
-  max-width: 40%;
+  max-width: 900px;
   height: auto;
   object-fit: contain;
 }
@@ -370,6 +374,10 @@ footer {
 
   .project-container {
     width: 20.875rem;
+  }
+
+  .graphics-header h1 {
+    font-size: 32px;
   }
 
   .graphic-container {
