@@ -41,7 +41,7 @@ function selectionToggle(p1) {
 
     for (let i = 0; i < collection.length; i++) {
         collection[i].style.backgroundColor = '#3C99DC';
-        collection[i].style.color = "#FFFFFF";
+        collection[i].style.fontWeight = "normal";
     }
 
     //change skills
@@ -85,4 +85,5 @@ function selectionToggle(p1) {
 
     let button = document.getElementById(buttonSelection);
     button.style.backgroundColor = "#3572F2";
+    button.style.fontWeight = "bold";
 }
