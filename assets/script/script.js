@@ -84,6 +84,5 @@ function selectionToggle(p1) {
     }
 
     let button = document.getElementById(buttonSelection);
-    button.style.backgroundColor = "#FFFFFF";
-    button.style.color = "#000000";
+    button.style.backgroundColor = "#3572F2";
 }
