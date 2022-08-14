@@ -234,6 +234,10 @@ nav ul li {
   height: 4rem;
 }
 
+.phone-icon {
+  display: none;
+}
+
 /* Up arrow */
 .scroll-up {
   position: fixed;
@@ -423,6 +427,10 @@ footer {
     width: 2rem;
     height: 2rem;
     margin: 20%;
+  }
+
+  .phone-icon {
+    display: flex;
   }
 
   .projects-container {
