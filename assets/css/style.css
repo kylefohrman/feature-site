@@ -254,6 +254,7 @@ nav ul li {
 /* Graphics box */
 .graphics-header {
   text-align: center;
+  font-size: 60px;
 }
 
 .graphic-container {
@@ -300,7 +301,7 @@ nav ul li {
 }
 
 .graphic-description h2 {
-  font-size: 40px;
+  font-size: 32px;
 }
 
 .resume-card {
@@ -441,8 +442,9 @@ footer {
     width: 20.875rem;
   }
 
-  .graphics-header h1 {
-    font-size: 32px;
+  .graphics-header {
+    text-align: center;
+    font-size: 38px;
   }
 
   .graphic-container {
