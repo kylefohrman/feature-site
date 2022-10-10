@@ -247,8 +247,8 @@ nav ul li {
 }
 
 .up-arrow {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 /* Graphics box */
@@ -428,6 +428,11 @@ footer {
     width: 2rem;
     height: 2rem;
     margin: 20%;
+  }
+
+  .up-arrow {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .phone-icon {
