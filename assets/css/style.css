@@ -47,6 +47,10 @@ body {
   font-family: var(--font-family);
 }
 
+fieldset {
+  border: hidden;
+}
+
 
 /* Burger menu */
 nav {
@@ -229,6 +233,14 @@ nav ul li {
   bottom: 25%;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1%;
+  bottom: 25%;
+}
+
 .socicon {
   width: 4rem;
   height: 4rem;
@@ -358,6 +370,18 @@ footer {
   padding: 1.25rem;
   text-align: center;
   margin: 2rem 0 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 900px) {
