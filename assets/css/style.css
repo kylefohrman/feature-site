@@ -298,7 +298,7 @@ nav ul li {
   object-fit: contain;
 }
 
-.grapic-description {
+.graphic-description {
   text-align: center;
   padding: 2rem;
   right: 20%;
@@ -381,6 +381,23 @@ footer {
     display: flex;
     flex-direction: column;
     position: relative;
+  }
+
+  .skill-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .skills-and-experience {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    text-align: left;
+    flex-direction: column;
+    height: 100%;
   }
 }
 
@@ -496,23 +513,6 @@ footer {
 
   .graphic-description h2 {
     font-size: 24px;
-  }
-
-  .skill-grid {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  }
-
-  .skills-and-experience {
-    display: flex;
-    align-items: left;
-    justify-content: space-between;
-    text-align: left;
-    flex-direction: column;
-    height: 100%;
   }
 }
 
