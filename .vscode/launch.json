@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "msedge",
+            "type": "firefox",
             "request": "launch",
-            "name": "Open Publications.html",
-            "file": "c:\\Users\\Kyle\\source\\Repos\\feature-site\\Publications.html"
+            "name": "Open index.html",
+            "file": "c:\\Users\\Kyle\\source\\Repos\\feature-site\\index.html"
         }
     ]
 }
