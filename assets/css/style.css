@@ -400,6 +400,11 @@ footer {
     flex-direction: column;
     height: 100%;
   }
+
+  .socicon {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -469,7 +474,7 @@ footer {
   .socicon {
     width: 2rem;
     height: 2rem;
-    margin: 10%;
+    /*margin: 10%;*/
   }
 
   .up-arrow {
