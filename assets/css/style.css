@@ -231,7 +231,7 @@ nav ul li {
   position: fixed;
   right: 1%;
   bottom: 25%;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 .contact {
@@ -399,6 +399,11 @@ footer {
     text-align: left;
     flex-direction: column;
     height: 100%;
+  }
+
+  .socicon {
+    width: 3rem;
+    height: 3rem;
   }
 }
 
