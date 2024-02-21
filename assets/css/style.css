@@ -422,6 +422,7 @@ footer {
     text-align: center;
     transform: translateX(120%);
     transition: transform 0.5s ease-in;
+    border-radius: 0% 0% 5% 5%;
   }
 
   nav ul li {
@@ -434,6 +435,7 @@ footer {
 
   nav ul.show {
     transform: translateX(0);
+    border-radius: 0% 0% 5% 5%;
   }
 
   .hero {
