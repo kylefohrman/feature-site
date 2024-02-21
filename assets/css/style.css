@@ -6,11 +6,11 @@
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #fcfcfc;
-  --primary-color: #4756df;
-  --secondary-color: #ff7235;
-  --primary-shadow: #8b8eaf;
-  --secondary-shadow: #a17a69;
+  --bg-color: #fcfcfc; /* nav-bgs */
+  --primary-color: #4756df; /* text */
+  --secondary-color: #ff7235; /* mouseover text */
+  --primary-shadow: #8b8eaf; /* card shadow */
+  --secondary-shadow: #a17a69; /* card shadow */
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -422,6 +422,7 @@ footer {
     text-align: center;
     transform: translateX(120%);
     transition: transform 0.5s ease-in;
+    border-radius: 0% 0% 5% 5%;
   }
 
   nav ul li {
@@ -434,6 +435,7 @@ footer {
 
   nav ul.show {
     transform: translateX(0);
+    border-radius: 0% 0% 5% 5%;
   }
 
   .hero {
