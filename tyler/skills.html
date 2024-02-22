@@ -6,11 +6,11 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKSFMFD931"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-PKSFMFD931');
+        gtag('config', 'G-PKSFMFD931');
     </script>
 
     <meta charset="UTF-8" />
@@ -58,20 +58,21 @@
     </div>
 
     <section class="skills" id="skills">
-    <div class="resume-card  animate__animated animate__fadeInRight">
-        <h2><u>Education</u></h2>
-        <p><b>Harvard Business School</b></p>
-        <p><i>Master in Business Administration</i></p>
-        <p>Matriculating in Fall 2026</p>
-        <p><br /></p>
-        <p><b>Northeastern University</b></p>
-        <p><i>Bachelor of Science Degree in International Business</i></p>
-        <p>Summa Cum Laude</p>
-        <p>May 2023</p>
-    </div>
+        <div class="resume-card  animate__animated animate__fadeInRight">
+            <h2><u>Education</u></h2>
+            <p><b>Harvard Business School</b></p>
+            <p><i>Master in Business Administration</i></p>
+            <p>2+2 Program Admit</p>
+            <p>Matriculating in Fall 2026</p>
+            <p><br /></p>
+            <p><b>Northeastern University</b></p>
+            <p><i>Bachelor of Science Degree in International Business</i></p>
+            <p>Summa Cum Laude</p>
+            <p>May 2023</p>
+        </div>
     </section>
-    
-    <div class="skills-and-experience">
+
+    <div class="skills-and-experience" style="justify-content: center;">
         <div class="resume-card animate__animated animate__fadeInLeft">
             <h2><u>Experience</u></h2>
             <p><b>Glasswing Ventures</b></p>
@@ -106,21 +107,29 @@
             <p>January - July 2020</p>
             <p>Boston, MA</p>
         </div>
-        <div class="resume-card animate__animated animate__fadeInLeft">
-            <h2><u>Languages</u></h2>
-            <p><b>Spanish (Castilian)</b></p>
-            <p><i>Certified by the Instituto Cervantes</i></p>
-            <p>CEFR C2- Mastery</p>
-            <p>Since 2013</p>
-            <p><b id="change-text">Click me to change the text!</b></p>
+        <div class="resume-card tyler-skills language-cards animate__animated animate__fadeInLeft">
+            <h2><u id="languages">Languages</u></h2>
+            <div id="spanish-text">
+                <p><b>Spanish (Castilian)</b></p>
+                <p><i>Certified by the Cervantes Institute</i></p>
+                <p>CEFR C1- Advanced</p>
+                <p>Since 2013</p>
+                <p class="btn" id="spanish-button" onclick="changeText('spanish')">Try it out</p>
+            </div>
             <p><br /></p>
-            <p><b>German (Hochdeutsch)</b></p>
-            <p><i>Self-study under Goethe-Institut Courses</i></p>
-            <p>Advanced Working Proficiency</p>
-            <p>Since 2022</p>
+            <div id="german-text">
+                <p><b>German (High German)</b></p>
+                <p><i>Self-study via the Goethe Institute</i></p>
+                <p>Advanced Working Proficiency</p>
+                <p>Since 2022</p>
+                <p class="btn" id="german-button" onclick="changeText('german')">Try it out</p>
+            </div>
             <p><br /></p>
-            <p><b>English (American)</b></p>
-            <p><i>Native Speaker</i></p>
+            <div id="english-text">
+                <p><b>English (American)</b></p>
+                <p><i>Native Speaker</i></p>
+                <p class="btn is-pressed" id="english-button" onclick="changeText('english')">Try it out</p>
+            </div>
         </div>
     </div>
 
