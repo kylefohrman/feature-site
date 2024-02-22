@@ -417,7 +417,73 @@ footer {
   margin: 2rem 0 0;
 }
 
+.floating {  
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.floatingRev {  
+  animation-name: floatingRev;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }    
+}
+
+@keyframes floatingRev {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, -15px); }
+  100%   { transform: translate(0, -0px); }    
+}
+
+@keyframes drifting {
+  0% { transform: translate(0px,  0); }
+  50%  { transform: translate(15px, 0); }
+  100%   { transform: translate(-0px, 0); }  
+}
+
+@keyframes driftingRev {
+  0% { transform: translate(0px,  0); }
+  50%  { transform: translate(-15px, 0); }
+  100%   { transform: translate(-0px, 0); }  
+}
+
 @media screen and (max-width: 1200px) {
+  .floating {  
+    animation-name: drifting;
+    text-align: center;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+
+  .floatingRev {  
+    animation-name: driftingRev;
+    text-align: center;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  
   .contact {
     max-width: 68.75rem;
     margin: auto;
