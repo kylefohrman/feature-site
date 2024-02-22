@@ -369,7 +369,7 @@ nav ul li {
 }
 
 .skill-buttons {
-  min-width: 350px;
+  min-width: 500px;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
@@ -388,7 +388,7 @@ nav ul li {
 }
 
 .skill-grid {
-  min-width: 350px;
+  min-width: 500px;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
@@ -505,8 +505,21 @@ footer {
     position: relative;
   }
 
+  .experience-card {
+    min-width: 400px;
+    text-align: center;
+  }
+
+  .skill-buttons {
+    min-width: 350px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
   .skill-grid {
-    max-width: 1200px;
+    min-width: 350px;
     margin: 0 auto;
     display: grid;
     gap: 1rem;
@@ -533,6 +546,11 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+  .experience-card {
+    min-width: 400px;
+    text-align: left;
+  }
+  
   nav {
     padding: 1.5rem 1rem;
   }
