@@ -364,8 +364,12 @@ nav ul li {
   margin: 10px;
 }
 
+.experience-card {
+  min-width: 400px;
+}
+
 .skill-buttons {
-  max-width: 1200px;
+  min-width: 350px;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
@@ -384,20 +388,27 @@ nav ul li {
 }
 
 .skill-grid {
-  max-width: 1200px;
+  min-width: 350px;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .skills-and-experience {
   display: flex;
   align-items: left;
-  justify-content: space-between;
+  justify-content: center;
   text-align: left;
   flex-direction: row;
   height: 100%;
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
 }
 
 .tyler-skills {
