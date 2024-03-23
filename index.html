@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKSFMFD931"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-PKSFMFD931');
@@ -29,19 +29,18 @@
 
   <!-- Animate CSS CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <title>Kyle Fohrman | Engineering and Design</title>
+  <title>The Fohrman Brothers</title>
 </head>
 
 <body>
   <!-- Navbar -->
   <nav>
-    <h1><a href="index.html">Kyle Fohrman</a></h1>
+    <h1><a href="index.html">The Fohrmans</a></h1>
     <ul class="navigation">
-      <li><a href="index.html" class="nav-link">Home</a></li>
-      <li><a href="graphics.html" class="nav-link">Projects</a></li>
-      <li><a href="publications.html" class="nav-link">Publications</a></li>
-      <li><a href="skills.html" class="nav-link">Skills</a></li>
-      <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <li><a href="tyler.html" class="nav-link">Tyler</a></li>
+      <li><a href="kyle.html" class="nav-link">Kyle</a></li>
+      <li><a href="jake.html" class="nav-link">Jake</a></li>
+      <li><a href="about.html" class="nav-link">Our Story</a></li>
     </ul>
     <button class="burger-menu" id="burger-menu">
       <ion-icon class="bars" name="menu-outline"></ion-icon>
@@ -49,119 +48,45 @@
     </button>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero" id="about">
-    <img src="assets/images/headshot.jpg" alt="kyle-fohrman" loading="lazy" class="hero-img animate__animated animate__fadeIn" />
-    <div class="bio animate__animated animate__fadeInUp">
-      <h2 class="bio-title"></h2>
-        <p class="bio-text">
-          I am a software engineer and design artist who loves to build new things.
-      </p>
-    </div>
-  </section>
-
-  <!-- More about -->
-  <section class="more-about">
-    <h2>About Me</h2>
-    <p>
-      Hello!
-    </p>
-
-    <p>
-      My name is Kyle Fohrman- a software engineer based in Seattle with experience in enterprise applications programming
-      and development.
-    </p>
-
-    <p>
-      Currently working at Amazon on machine learning and AI. <a href="contact.html">Reach out today!</a>
-    </p>
-  </section>
-
-  <!-- Skills section -->
-  <section class="skills" id="skills">
-    <h2 class="skill-header">My Top Skills</h2>
-
-    <div class="skills-wrapper">
-      <div class="first-set animate__animated animate__pulse">
-        <img src="assets/icons/java.svg" alt="java" loading="lazy" class="icon icon-card" />
-        <img src="assets/icons/cpp.svg" alt="C++" loading="lazy" class="icon icon-card" />
-        <img src="assets/icons/python.svg" alt="python" loading="lazy" class="icon icon-card" />
+  <div class="character-select">
+    <a href="tyler.html" class="selection-anchor">
+      <div style="animation-delay: 0s;" class="selection-tyler animate__animated animate__fadeIn">
+        <img src="assets/images/tyler/tyler-character.jpg" alt="Tyler headshot"
+          class="character-card character-tyler" />
+        <div class="selection-text">
+          <h2 class="selection-name"><u>Tyler</u></h2>
+          <p class="selection-description">The Business One</p>
+        </div>
       </div>
-      <div class="second-set animate__animated animate__pulse">
-        <img src="assets/icons/sql.svg" alt="SQL" loading="lazy" class="icon icon-card" />
-        <img src="assets/icons/html.svg" alt="HTML 5" loading="lazy" class="icon icon-card" />
-        <img src="assets/icons/photoshop.svg" alt="photoshop" loading="lazy" class="icon icon-card" />
+    </a>
+    <a href="kyle.html" class="selection-anchor">
+      <div style="animation-delay: .25s" class="selection-kyle animate__animated animate__fadeIn">
+        <img src="assets/images/kyle/kyle-character.jpg" alt="Kyle headshot" class="character-card character-kyle" />
+        <div class="selection-text">
+          <h2 class="selection-name"><u>Kyle</u></h2>
+          <p class="selection-description">The Computer One</p>
+        </div>
       </div>
-    </div>
-    <h3><a href="skills.html">See All Skills</a></h3>
-  </section>
-
-  <!-- Projects section -->
-  <section class="projects" id="projects">
-    <h2 class="projects-title">Some of my Recent Projects</h2>
-    <div class="projects-container">
-      <div class="project-container project-card">
-        <img src="assets/images/Pavilion.PNG" alt="computer-graphics" loading="lazy" class="project-pic" />
-        <h3 class="project-title">Graphics Projects</h3>
-        <p class="project-details">
-          Everything from OpenGL to Photoshop.
-        </p>
-        <a href="graphics.html" class="project-link">Check it out</a>
+    </a>
+    <a href="jake.html" class="selection-anchor">
+      <div style="animation-delay: .5s" class="selection-jake animate__animated animate__fadeIn">
+        <img src="assets/images/jake/jake-character.jpg" alt="Jake headshot" class="character-card character-jake" />
+        <div class="selection-text">
+          <h2 class="selection-name"><u>Jacob</u></h2>
+          <p class="selection-description">The Adventuring One</p>
+        </div>
       </div>
-      <div class="project-container project-card">
-        <img src="assets/images/buy-us-war-bonds.png" alt="publications" loading="lazy" class="project-pic" />
-        <h3 class="project-title">Publications</h3>
-        <p class="project-details">
-          By Greatreads.
-        </p>
-        <a href="publications.html" class="project-link">Check it
-          out</a>
-      </div>
-      <div class="project-container project-card">
-        <img src="assets/images/Star Maker Features.png" alt="star-maker-plugin" loading="lazy" class="project-pic" />
-        <h3 class="project-title">Blender Star Plugin</h3>
-        <p class="project-details">
-          Blender primitives add-on.
-        </p>
-        <a href="https://github.com/kylefohrman/star-maker" target="_blank" class="project-link">Check it Out</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact section -->
-
-
-  <!-- Social accounts - Fixed to the right -->
-  <div class="socials animate__animated animate__fadeInRight">
-    <a href="https://www.instagram.com/kfohrman/" target="_blank">
-      <img src="assets/icons/instagram.png" alt="Instagram" loading="lazy" class="socicon" />
-    </a>
-    <a href="https://www.linkedin.com/in/kfohrman/" target="_blank">
-      <img src="assets/icons/linkedin.png" alt="LinkedIn" loading="lazy" class="socicon" />
-    </a>
-    <a href="https://github.com/kylefohrman" target="_blank">
-      <img src="assets/icons/github.png" alt="Github" loading="lazy" class="socicon" />
-    </a>
-    <a href="mailto:kyle@fohrman.org" target="_blank">
-      <img src="assets/icons/email.png" alt="Email" loading="lazy" class="socicon" />
-    </a>
-    <a href="tel:+1206-569-8395" class="phone-icon">
-      <img src="assets/icons/phone-icon.png" alt="Cell Phone" loading="lazy" class="socicon" />
-    </a>
-    <a href="https://threads.net/@kfohrman" target="_blank">
-      <img src="assets/icons/threads.png" alt="Threads" loading="lazy" class="socicon" />
     </a>
   </div>
 
-
-  <!-- Scroll to top -->
+  <!-- Scroll to top (currently hidden) -->
   <i class="scroll-up animate__animated animate__fadeInRight" id="scroll-up">
-    <img src="assets/icons/up-arrow.svg" class="socicon up-arrow" alt="scroll-up" />
+    <img src="assets/icons/up-arrow.svg" class="socicon up-arrow" style="display: none;" alt="scroll-up" />
   </i>
 
   <!-- Footer section -->
   <footer>
-    <p class="copy">&copy; Copyright 2021</p>
+    <p class="copy">&copy; Copyright 2024</p>
     <p class="copy">Built with &#x2661; by <a href="https://www.linkedin.com/in/kfohrman/" target="_blank">Kyle
         Fohrman</a></p>
   </footer>

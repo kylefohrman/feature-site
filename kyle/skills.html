@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKSFMFD931"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PKSFMFD931');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/ico" sizes="32x32" href="../assets/icons/favicon.ico" />
+    <link rel="icon" type="image/ico" sizes="16x16" href="../assets/icons/favicon.ico" />
+    <link rel="mask-icon" href="../assets/icons/safari-pinned-tab.svg" color="white" />
+    <link rel="shortcut icon" href="../assets/icons/favicon.ico" />
+
+    <!-- Animate CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Kyle Fohrman | Skills</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h1><a href="../index.html">Kyle Fohrman</a></h1>
+        <ul class="navigation">
+            <li><a href="../index.html" class="nav-link">See All Brothers</a></li>
+            <li><a href="../kyle.html" class="nav-link">About Kyle</a></li>
+            <li><a href="graphics.html" class="nav-link">Projects</a></li>
+            <li><a href="publications.html" class="nav-link">Publications</a></li>
+            <li><a href="skills.html" class="nav-link">Skills</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+            <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+        </button>
+    </nav>
+
+    <!-- Experience -->
+    <div class="resume-card">
+        <h1 style="text-align: center;">Skills and Experience</h1>
+        <p style="text-align: center;"><a href="https://www.linkedin.com/in/kfohrman/" target="_blank">See full
+                list.</a> For inquiries, please contact <a href="mailto:kyle@fohrman.org"
+                target="_blank">kyle@fohrman.org</a> or call <a href="tel:+1206-569-8395">(206)569-8395.</a>
+        </p>
+    </div>
+
+    <section class="skills" id="skills">
+        <div class="skills-section">
+            <div class="resume-card animate__animated animate__fadeInRight">
+                <h2><u>Education</u></h2>
+                <p><b>University of Florida</b></p>
+                <p><i>Bachelor of Science Degree in Computer Science</i></p>
+                <p>Minor: Mandarin Chinese</p>
+                <p>May 2022</p>
+            </div>
+
+            <div class="skills-and-experience">
+                <div class="resume-card experience-card animate__animated animate__fadeInLeft">
+                    <h2><u>Experience</u></h2>
+                    <p><b>Amazon</b></p>
+                    <p><i>Software Development Engineer, Machine Learning</i></p>
+                    <p>August 2022 - Present</p>
+                    <p>Seattle, WA</p>
+                    <p><br /></p>
+                    <p><b>CSX Technology</b></p>
+                    <p><i>Software Development Intern</i></p>
+                    <p>June - August 2021</p>
+                    <p>Jacksonville, FL</p>
+                    <p><br /></p>
+                    <p><b>Paradox Private Equity Funds</b></p>
+                    <p><i>Vendor Manager</i></p>
+                    <p>May - September 2020</p>
+                    <p>San Diego, CA</p>
+                    <p><br /></p>
+                    <p><b>RCP Shelters</b></p>
+                    <p><i>Summer Design Assistant</i></p>
+                    <p>June - August, 2016 - 2019</p>
+                    <p>Stuart, FL</p>
+                </div>
+
+                <div class="resume-card skills-div  animate__animated animate__fadeInUp">
+                    <h2><u>Skills</u></h2>
+                    <p>(click buttons to filter)<br></p>
+                    <div class="skill-buttons">
+                        <button type="button" id="button-skills" onclick="selectionToggle('skill-card')"
+                            class="skill-button">See All</button>
+                        <button type="button" id="button-programming" onclick="selectionToggle('programming')"
+                            class="skill-button">Coding</button>
+                        <button type="button" id="button-webdev" onclick="selectionToggle('webdev')"
+                            class="skill-button">Web
+                            Dev</button>
+                        <button type="button" id="button-design" onclick="selectionToggle('design')"
+                            class="skill-button">Design</button>
+                        <button type="button" id="button-enterprise" onclick="selectionToggle('development')"
+                            class="skill-button">Enterprise</button>
+                        <button type="button" id="button-databases" onclick="selectionToggle('database')"
+                            class="skill-button">Databases</button>
+                        <button type="button" id="button-research" onclick="selectionToggle('research')"
+                            class="skill-button">Research</button>
+                        <button type="button" id="button-zombie" onclick="selectionToggle('zombies')"
+                            class="skill-button">Apocalypse</button>
+                    </div>
+                    <p><br /></p>
+                    <div class="skill-grid">
+                        <div class="skill-card language zombies">English</div>
+                        <div class="skill-card language zombies">Chinese</div>
+                        <div class="skill-card language zombies">Spanish</div>
+                        <div class="skill-card programming research">Python</div>
+                        <div class="skill-card programming">C++</div>
+                        <div class="skill-card programming">C</div>
+                        <div class="skill-card database webdev development">Amazon Web Services</div>
+                        <div class="skill-card database research">SQL and SOQL</div>
+                        <div class="skill-card design">Photoshop CC</div>
+                        <div class="skill-card programming webdev">JavaScript</div>
+                        <div class="skill-card programming research">OpenAI</div>
+                        <div class="skill-card programming development">Java EE</div>
+                        <div class="skill-card zombies">Chainsaws</div>
+                        <div class="skill-card development">Eclipse</div>
+                        <div class="skill-card development">Jira</div>
+                        <div class="skill-card development">VSCode</div>
+                        <div class="skill-card webdev">HTML5</div>
+                        <div class="skill-card webdev">Angular</div>
+                        <div class="skill-card programming design">OpenGL</div>
+                        <div class="skill-card programming development">Kotlin</div>
+                        <div class="skill-card design">Blender</div>
+                        <div class="skill-card research">R Studio</div>
+                        <div class="skill-card zombies">Survival</div>
+                        <div class="skill-card database research">SAS</div>
+                        <div class="skill-card research">MATLAB</div>
+                        <div class="skill-card development">JUnit</div>
+                        <div class="skill-card design">Onshape</div>
+                        <div class="skill-card webdev">CSS</div>
+                        <div class="skill-card database">Heroku</div>
+                        <div class="skill-card programming">MIPS</div>
+                        <div class="skill-card programming development">Linux</div>
+                        <div class="skill-card development">GIT</div>
+                        <div class="skill-card design">Illustrator CC</div>
+                        <div class="skill-card design">Animate CC</div>
+                        <div class="skill-card research">Julia</div>
+                        <div class="skill-card development">Agile</div>
+                        <div class="skill-card development">TDD</div>
+                        <div class="skill-card development">Clean Code</div>
+                        <div class="skill-card development">OOP</div>
+                        <div class="skill-card development">OOD</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social accounts - Fixed to the right -->
+
+    <!-- Scroll to top -->
+    <i class="scroll-up animate__animated animate__fadeInRight" id="scroll-up">
+        <img src="../assets/icons/up-arrow.svg" class="socicon up-arrow" alt="scroll-up" />
+    </i>
+
+    <!-- Footer section -->
+    <footer>
+        <p class="copy">&copy; Copyright 2024</p>
+        <p class="copy">Built with &#x2661; by <a href="https://www.linkedin.com/in/kfohrman/" target="_blank">Kyle
+                Fohrman</a></p>
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="../assets/script/script.js"></script>
+    <script src="../assets/script/kyle.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

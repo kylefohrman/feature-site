@@ -2,15 +2,20 @@
 
 /* Variables */
 :root {
-  --font-family: "Roboto", sans-serf;
+  --font-family: "Roboto", sans-serif;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
   --bg-color: #fcfcfc;
+  /* nav-bgs */
   --primary-color: #4756df;
+  /* text */
   --secondary-color: #ff7235;
+  /* mouseover text */
   --primary-shadow: #8b8eaf;
+  /* card shadow */
   --secondary-shadow: #a17a69;
+  /* card shadow */
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -98,6 +103,40 @@ nav ul li {
   display: none;
 }
 
+.btn {
+  display: inline-block;
+  text-align: center;
+  border-radius: 2px;
+  line-height: 19px;
+  cursor: pointer;
+  margin-left: -1px;
+  padding: 4px 15px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+  border: 1px solid #c6c6c6;
+  color: #000;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  background-image: -webkit-linear-gradient(top, #ffffff, #f1f1f1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.is-pressed {
+  background: -webkit-linear-gradient(top, #eee, #e0e0e0);
+  border: 1px solid #d7d7d7;
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.is-pressed:hover {
+  background: -webkit-linear-gradient(top, #eee, #e0e0e0);
+  border: 1px solid #d7d7d7;
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
 /* Hero */
 .hero {
   display: flex;
@@ -167,12 +206,141 @@ nav ul li {
   height: 11.25rem;
 }
 
+.about-icon {
+  width: 5.875rem;
+  height: 5.25rem;
+}
+
 .icon-card {
   background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--secondary-shadow);
-  padding: 20px;
-  margin: 10px;
+  padding: 15px;
+}
+
+.about-contact-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 5px;
+  margin: 2px
+}
+
+.about-resume-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 5px;
+  margin: 2px;
+  height: 5.25rem;
+  align-content: center;
+}
+
+.character-select {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.character-card {
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+.selection-tyler {
+  display: flex;
+  flex-direction: column;
+}
+
+.selection-kyle {
+  display: flex;
+  flex-direction: column;
+}
+
+.selection-jake {
+  display: flex;
+  flex-direction: column;
+}
+
+.selection-text {
+  flex: 20;
+  text-align: center;
+  color: #000;
+}
+
+.selection-anchor {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.selection-anchor:hover {
+  opacity: 0.6;
+}
+
+.selection-name {
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.selection-description {
+  margin-top: 2%;
+}
+
+.about-hello {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+}
+
+.about-photo {
+  flex-grow: 1;
+  max-width: 45%;
+  max-height: 45%;
+  margin-right: 0%;
+  margin-left: 7%;
+  flex: 70;
+}
+
+.about-text {
+  flex: 10;
+  margin-top: 10%;
+}
+
+.about-left {
+  flex: 10;
+}
+
+.about-right {
+  flex: 10;
+}
+
+.about-contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.wrapper-left-buffer {
+  flex: 10;
+}
+
+.wrapper-contact-buffer {
+  flex: 35;
+}
+
+.wrapper-center-buffer {
+  flex: 3;
+}
+
+.wrapper-business-buffer {
+  flex: 40;
+}
+
+.wrapper-right-buffer {
+  flex: 22;
 }
 
 /* Projects */
@@ -325,8 +493,12 @@ nav ul li {
   margin: 10px;
 }
 
+.experience-card {
+  min-width: 400px;
+}
+
 .skill-buttons {
-  max-width: 1200px;
+  min-width: 500px;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
@@ -345,20 +517,55 @@ nav ul li {
 }
 
 .skill-grid {
-  max-width: 1200px;
+  min-width: 500px;
   margin: 0 auto;
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .skills-and-experience {
   display: flex;
   align-items: left;
-  justify-content: space-between;
+  justify-content: center;
   text-align: left;
   flex-direction: row;
   height: 100%;
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.about-outer-cards {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.about-inner-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 60;
+}
+
+.about-left-card {
+  flex: 20;
+}
+
+.about-right-card {
+  flex: 20;
+}
+
+.tyler-skills {
+  min-width: 45ch !important;
+  text-align: center !important;
 }
 
 .skills-div {
@@ -373,7 +580,105 @@ footer {
   margin: 2rem 0 0;
 }
 
+.floating {
+  animation-name: floating;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.floatingRev {
+  animation-name: floatingRev;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 15px);
+  }
+
+  50% {
+    transform: translate(0, -15px);
+  }
+
+  100% {
+    transform: translate(0, 15px);
+  }
+}
+
+@keyframes floatingRev {
+  0% {
+    transform: translate(0, -15px);
+  }
+
+  50% {
+    transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(0, -15px);
+  }
+}
+
+@keyframes drifting {
+  0% {
+    transform: translate(15px, 0);
+  }
+
+  50% {
+    transform: translate(-15px, 0);
+  }
+
+  100% {
+    transform: translate(15px, 0);
+  }
+}
+
+@keyframes driftingRev {
+  0% {
+    transform: translate(-15px, 0);
+  }
+
+  50% {
+    transform: translate(15px, 0);
+  }
+
+  100% {
+    transform: translate(-15px, 0);
+  }
+}
+
 @media screen and (max-width: 1200px) {
+  .floating {
+    animation-name: drifting;
+    text-align: center;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+
+  .floatingRev {
+    animation-name: driftingRev;
+    text-align: center;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+
   .contact {
     max-width: 68.75rem;
     margin: auto;
@@ -384,8 +689,61 @@ footer {
     position: relative;
   }
 
+  .about-hello {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+  }
+
+  .about-photo {
+    flex-grow: 1;
+    max-width: 35%;
+    max-height: 35%;
+    margin-top: 3%;
+    margin-right: 0%;
+    margin-left: 0%;
+    flex: 70;
+  }
+
+  .about-text {
+    flex: 30;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 0%;
+  }
+
+  .about-left {
+    flex: 0;
+  }
+
+  .about-right {
+    flex: 0;
+  }
+
+  .experience-card {
+    min-width: 400px;
+    text-align: center;
+  }
+
+  .about-contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .skill-buttons {
+    min-width: 350px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
   .skill-grid {
-    max-width: 1200px;
+    min-width: 350px;
     margin: 0 auto;
     display: grid;
     gap: 1rem;
@@ -401,6 +759,10 @@ footer {
     height: 100%;
   }
 
+  .tyler-skills {
+    min-width: 30ch !important;
+  }
+
   .socicon {
     width: 3rem;
     height: 3rem;
@@ -408,6 +770,62 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+  .experience-card {
+    min-width: 400px;
+    text-align: left;
+  }
+
+  .character-select {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: stretch;
+  }
+
+  .character-card {
+    flex-grow: 1;
+    width: 50%;
+    height: 50%;
+    padding: 5px;
+  }
+
+  .about-photo {
+    flex-grow: 1;
+    max-width: 60%;
+    max-height: 60%;
+    margin-right: 0%;
+    margin-left: 0%;
+    flex: 70;
+  }
+
+  .character-tyler {
+    margin-left: 5%;
+  }
+
+  .character-kyle {
+    margin-right: 5%;
+  }
+
+  .character-jake {
+    margin-left: 5%;
+  }
+
+  .selection-tyler {
+    flex-direction: row;
+  }
+
+  .selection-kyle {
+    flex-direction: row-reverse;
+  }
+
+  .selection-jake {
+    flex-direction: row;
+  }
+
+  .selection-text {
+    margin-top: 20%;
+  }
+
   nav {
     padding: 1.5rem 1rem;
   }
