@@ -226,36 +226,22 @@ nav ul li {
   margin: 2px
 }
 
-.about-contact-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.wrapper-left-buffer {
-  flex: 15;
-}
-
-.wrapper-contact-buffer {
-  flex: 30;
-}
-
-.wrapper-center-buffer {
-  flex: 10;
-}
-
-.wrapper-business-buffer {
-  flex: 30;
-}
-
-.wrapper-right-buffer {
-  flex: 15;
+.about-resume-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 5px;
+  margin: 2px;
+  height: 5.25rem;
+  align-content: center;
 }
 
 .character-select {
   display: flex;
   flex-direction: row;
   justify-content: stretch;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .character-card {
@@ -314,8 +300,8 @@ nav ul li {
   max-width: 45%;
   max-height: 45%;
   margin-right: 0%;
-  margin-left: 5%;
-  flex: 75;
+  margin-left: 7%;
+  flex: 70;
 }
 
 .about-text {
@@ -328,7 +314,33 @@ nav ul li {
 }
 
 .about-right {
-  flex: 5;
+  flex: 10;
+}
+
+.about-contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.wrapper-left-buffer {
+  flex: 10;
+}
+
+.wrapper-contact-buffer {
+  flex: 35;
+}
+
+.wrapper-center-buffer {
+  flex: 3;
+}
+
+.wrapper-business-buffer {
+  flex: 40;
+}
+
+.wrapper-right-buffer {
+  flex: 22;
 }
 
 /* Projects */
@@ -481,15 +493,6 @@ nav ul li {
   margin: 10px;
 }
 
-.about-resume-card {
-  background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
-  padding: 10px;
-  margin: 10px;
-  height: 5.25rem;
-}
-
 .experience-card {
   min-width: 400px;
 }
@@ -579,7 +582,7 @@ footer {
 
 .floating {
   animation-name: floating;
-  animation-duration: 3s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   margin-left: 15px;
@@ -589,7 +592,7 @@ footer {
 
 .floatingRev {
   animation-name: floatingRev;
-  animation-duration: 3s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   margin-left: 15px;
@@ -599,21 +602,7 @@ footer {
 
 @keyframes floating {
   0% {
-    transform: translate(0, 0px);
-  }
-
-  50% {
     transform: translate(0, 15px);
-  }
-
-  100% {
-    transform: translate(0, -0px);
-  }
-}
-
-@keyframes floatingRev {
-  0% {
-    transform: translate(0, 0px);
   }
 
   50% {
@@ -621,27 +610,27 @@ footer {
   }
 
   100% {
-    transform: translate(0, -0px);
+    transform: translate(0, 15px);
+  }
+}
+
+@keyframes floatingRev {
+  0% {
+    transform: translate(0, -15px);
+  }
+
+  50% {
+    transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(0, -15px);
   }
 }
 
 @keyframes drifting {
   0% {
-    transform: translate(0px, 0);
-  }
-
-  50% {
     transform: translate(15px, 0);
-  }
-
-  100% {
-    transform: translate(-0px, 0);
-  }
-}
-
-@keyframes driftingRev {
-  0% {
-    transform: translate(0px, 0);
   }
 
   50% {
@@ -649,7 +638,21 @@ footer {
   }
 
   100% {
-    transform: translate(-0px, 0);
+    transform: translate(15px, 0);
+  }
+}
+
+@keyframes driftingRev {
+  0% {
+    transform: translate(-15px, 0);
+  }
+
+  50% {
+    transform: translate(15px, 0);
+  }
+
+  100% {
+    transform: translate(-15px, 0);
   }
 }
 
@@ -657,7 +660,7 @@ footer {
   .floating {
     animation-name: drifting;
     text-align: center;
-    animation-duration: 3s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-left: 15px;
@@ -668,7 +671,7 @@ footer {
   .floatingRev {
     animation-name: driftingRev;
     text-align: center;
-    animation-duration: 3s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-left: 15px;
