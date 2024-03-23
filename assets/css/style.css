@@ -2,7 +2,7 @@
 
 /* Variables */
 :root {
-  --font-family: "Roboto", sans-serf;
+  --font-family: "Roboto", sans-serif;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
@@ -206,18 +206,55 @@ nav ul li {
   height: 11.25rem;
 }
 
+.about-icon {
+  width: 5.875rem;
+  height: 5.25rem;
+}
+
 .icon-card {
   background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--secondary-shadow);
-  padding: 20px;
-  margin: 10px;
+  padding: 15px;
+}
+
+.about-contact-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 5px;
+  margin: 2px
+}
+
+.about-contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.wrapper-left-buffer {
+  flex: 15;
+}
+
+.wrapper-contact-buffer {
+  flex: 30;
+}
+
+.wrapper-center-buffer {
+  flex: 10;
+}
+
+.wrapper-business-buffer {
+  flex: 30;
+}
+
+.wrapper-right-buffer {
+  flex: 15;
 }
 
 .character-select {
   display: flex;
   flex-direction: row;
-  height: 100%;
   justify-content: stretch;
 }
 
@@ -226,6 +263,72 @@ nav ul li {
   width: 100%;
   height: 100%;
   padding: 15px;
+}
+
+.selection-tyler {
+  display: flex;
+  flex-direction: column;
+}
+
+.selection-kyle {
+  display: flex;
+  flex-direction: column;
+}
+
+.selection-jake {
+  display: flex;
+  flex-direction: column;
+}
+
+.selection-text {
+  flex: 20;
+  text-align: center;
+  color: #000;
+}
+
+.selection-anchor {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.selection-anchor:hover {
+  opacity: 0.6;
+}
+
+.selection-name {
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.selection-description {
+  margin-top: 2%;
+}
+
+.about-hello {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+}
+
+.about-photo {
+  flex-grow: 1;
+  max-width: 45%;
+  max-height: 45%;
+  margin-right: 0%;
+  margin-left: 5%;
+  flex: 75;
+}
+
+.about-text {
+  flex: 10;
+  margin-top: 10%;
+}
+
+.about-left {
+  flex: 10;
+}
+
+.about-right {
+  flex: 5;
 }
 
 /* Projects */
@@ -378,6 +481,15 @@ nav ul li {
   margin: 10px;
 }
 
+.about-resume-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 10px;
+  margin: 10px;
+  height: 5.25rem;
+}
+
 .experience-card {
   min-width: 400px;
 }
@@ -425,6 +537,29 @@ nav ul li {
   justify-content: center;
 }
 
+.about-outer-cards {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.about-inner-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 60;
+}
+
+.about-left-card {
+  flex: 20;
+}
+
+.about-right-card {
+  flex: 20;
+}
+
 .tyler-skills {
   min-width: 45ch !important;
   text-align: center !important;
@@ -442,7 +577,7 @@ footer {
   margin: 2rem 0 0;
 }
 
-.floating {  
+.floating {
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -452,7 +587,7 @@ footer {
   margin-top: 5px;
 }
 
-.floatingRev {  
+.floatingRev {
   animation-name: floatingRev;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -463,31 +598,63 @@ footer {
 }
 
 @keyframes floating {
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0, 15px); }
-  100%   { transform: translate(0, -0px); }    
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
 @keyframes floatingRev {
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(0, -15px); }
-  100%   { transform: translate(0, -0px); }    
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, -15px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
 @keyframes drifting {
-  0% { transform: translate(0px,  0); }
-  50%  { transform: translate(15px, 0); }
-  100%   { transform: translate(-0px, 0); }  
+  0% {
+    transform: translate(0px, 0);
+  }
+
+  50% {
+    transform: translate(15px, 0);
+  }
+
+  100% {
+    transform: translate(-0px, 0);
+  }
 }
 
 @keyframes driftingRev {
-  0% { transform: translate(0px,  0); }
-  50%  { transform: translate(-15px, 0); }
-  100%   { transform: translate(-0px, 0); }  
+  0% {
+    transform: translate(0px, 0);
+  }
+
+  50% {
+    transform: translate(-15px, 0);
+  }
+
+  100% {
+    transform: translate(-0px, 0);
+  }
 }
 
 @media screen and (max-width: 1200px) {
-  .floating {  
+  .floating {
     animation-name: drifting;
     text-align: center;
     animation-duration: 3s;
@@ -498,7 +665,7 @@ footer {
     margin-top: 5px;
   }
 
-  .floatingRev {  
+  .floatingRev {
     animation-name: driftingRev;
     text-align: center;
     animation-duration: 3s;
@@ -508,7 +675,7 @@ footer {
     margin-right: 15px;
     margin-top: 5px;
   }
-  
+
   .contact {
     max-width: 68.75rem;
     margin: auto;
@@ -519,9 +686,48 @@ footer {
     position: relative;
   }
 
+  .about-hello {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+  }
+
+  .about-photo {
+    flex-grow: 1;
+    max-width: 35%;
+    max-height: 35%;
+    margin-right: 0%;
+    margin-left: 0%;
+    flex: 70;
+  }
+
+  .about-text {
+    flex: 30;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 0%;
+  }
+
+  .about-left {
+    flex: 0;
+  }
+
+  .about-right {
+    flex: 0;
+  }
+
   .experience-card {
     min-width: 400px;
     text-align: center;
+  }
+
+  .about-contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .skill-buttons {
@@ -579,18 +785,43 @@ footer {
     padding: 5px;
   }
 
+  .about-photo {
+    flex-grow: 1;
+    max-width: 60%;
+    max-height: 60%;
+    margin-right: 0%;
+    margin-left: 0%;
+    flex: 70;
+  }
+
   .character-tyler {
     margin-left: 5%;
   }
 
   .character-kyle {
-    margin-left: 45%;
+    margin-right: 5%;
   }
 
   .character-jake {
     margin-left: 5%;
   }
-  
+
+  .selection-tyler {
+    flex-direction: row;
+  }
+
+  .selection-kyle {
+    flex-direction: row-reverse;
+  }
+
+  .selection-jake {
+    flex-direction: row;
+  }
+
+  .selection-text {
+    margin-top: 20%;
+  }
+
   nav {
     padding: 1.5rem 1rem;
   }
