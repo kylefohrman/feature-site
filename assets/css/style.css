@@ -406,6 +406,7 @@ nav ul li {
 }
 
 .contact {
+  animation-delay: .5s;
   display: flex;
   flex-direction: column;
   position: fixed;
