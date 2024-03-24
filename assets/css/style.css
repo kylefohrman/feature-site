@@ -302,6 +302,7 @@ nav ul li {
   margin-right: 0%;
   margin-left: 7%;
   flex: 70;
+  aspect-ratio: 4/3;
   flex-wrap: wrap;
 }
 
@@ -544,7 +545,6 @@ nav ul li {
 .about-outer-cards {
   display: flex;
   flex-direction: row;
-  height: 100%;
   justify-content: center;
   margin-bottom: 5%;
 }
