@@ -706,11 +706,11 @@ footer {
     margin-top: 0%;
     margin-right: 0%;
     margin-left: 0%;
-    flex: 70;
+    flex: auto;
   }
 
   .about-text {
-    flex: 30;
+    flex: auto;
     margin-bottom: 2%;
     margin-right: 5%;
     margin-left: 5%;
@@ -817,7 +817,6 @@ footer {
     max-height: 60%;
     margin-right: 0%;
     margin-left: 0%;
-    flex: 70;
   }
 
   .character-tyler {
