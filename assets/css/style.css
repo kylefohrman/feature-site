@@ -898,6 +898,7 @@ footer {
   .hero img {
     height: 30rem;
     width: 30rem;
+    margin-top: 5%;
   }
 
   .bio {
