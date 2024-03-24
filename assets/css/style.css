@@ -582,6 +582,12 @@ footer {
   margin: 2rem 0 0;
 }
 
+.homepage-footer {
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
+
 .floating {
   animation-name: floating;
   animation-duration: 15s;
@@ -793,6 +799,10 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+  .homepage-footer {
+    display: none;
+  }
+
   .experience-card {
     min-width: 400px;
     text-align: left;
