@@ -580,6 +580,9 @@ footer {
   padding: 1.25rem;
   text-align: center;
   margin: 2rem 0 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
 }
 
 .floating {
