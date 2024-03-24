@@ -302,6 +302,7 @@ nav ul li {
   margin-right: 0%;
   margin-left: 7%;
   flex: 70;
+  object-fit: contain !important;
 }
 
 .about-text {
