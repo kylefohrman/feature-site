@@ -302,7 +302,7 @@ nav ul li {
   margin-right: 0%;
   margin-left: 7%;
   flex: 70;
-  object-fit: contain !important;
+  flex-wrap: wrap;
 }
 
 .about-text {
@@ -696,13 +696,14 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 1%;
+    margin-bottom: 1%;
   }
 
   .about-photo {
     flex-grow: 1;
     max-width: 35%;
     max-height: 35%;
-    margin-top: 3%;
+    margin-top: 0%;
     margin-right: 0%;
     margin-left: 0%;
     flex: 70;
