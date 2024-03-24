@@ -735,6 +735,26 @@ footer {
     justify-content: center;
   }
 
+  .wrapper-left-buffer {
+    flex: 0;
+  }
+
+  .wrapper-contact-buffer {
+    flex: 50;
+  }
+
+  .wrapper-center-buffer {
+    flex: 0;
+  }
+
+  .wrapper-business-buffer {
+    flex: 50;
+  }
+
+  .wrapper-right-buffer {
+    flex: 0;
+  }
+
   .skill-buttons {
     min-width: 350px;
     margin: 0 auto;
