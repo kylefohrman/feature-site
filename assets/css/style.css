@@ -573,6 +573,8 @@ nav ul li {
 
 .skills-div {
   text-align: center;
+  align-content: center;
+  align-items: center;
 }
 
 /* footer */
