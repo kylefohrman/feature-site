@@ -734,7 +734,7 @@ footer {
   }
 
   .experience-card {
-    min-width: 400px;
+    min-width: 300px;
     text-align: center;
   }
 
@@ -783,7 +783,7 @@ footer {
   .skills-and-experience {
     display: flex;
     align-items: left;
-    justify-content: space-between;
+    justify-content: center;
     text-align: left;
     flex-direction: column;
     height: 100%;
@@ -805,7 +805,7 @@ footer {
   }
 
   .experience-card {
-    min-width: 400px;
+    min-width: 300px;
     text-align: left;
   }
 
