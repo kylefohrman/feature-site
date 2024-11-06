@@ -14,7 +14,7 @@ var spanishText = {
     'spanish': `<p><b>Español (castellano)</b></p>\
     <p><i>Certificado por el Instituto Cervantes</i></p>\
     <p>MCER C1- Dominio operativo eficaz</p>\
-    <p>Desde el 2013</p>\
+    <p>Desde 2013</p>\
     <p class="btn" id="spanish-button" onclick="changeText('spanish')">Pruébalo</p>`,
     'german': `<p><b>Spanisch (Kastilisch)</b></p>\
     <p><i>Zertifikat des Cervantes-Instituts</i></p>\
