@@ -1,62 +1,70 @@
-//button selection in skills section
-function selectionToggle(p1) {
+IS_PRESSED = 'skill-is-pressed';
 
-    //reset skills
-    let collection = document.getElementsByClassName('skill-card');
+// Resets skill cards
+function resetCards() {
+    let allCards = document.getElementsByClassName('skill-card');
 
-    for (let i = 0; i < collection.length; i++) {
-        collection[i].style.color = '#D3D3D3';
-        collection[i].style.backgroundColor = '#FFFFFF';
+    for (let i = 0; i < allCards.length; i++) {
+        allCards[i].style.color = '#000000';
+        allCards[i].style.backgroundColor = '#FFFFFF';
     }
+}
 
-    //reset buttons
-    collection = document.getElementsByClassName('skill-button');
-
-    for (let i = 0; i < collection.length; i++) {
-        collection[i].style.backgroundColor = '#3C99DC';
-        collection[i].style.fontWeight = "normal";
-    }
-
-    //change skills
+// Color skill cards
+function colorCards(p1) {
     let selection = document.getElementsByClassName(p1);
+    let allCards = document.getElementsByClassName('skill-card');
+
+    for (let i = 0; i < allCards.length; i++) {
+        allCards[i].style.color = '#D3D3D3';
+        allCards[i].style.backgroundColor = '#FFFFFF';
+    }
 
     for (let i = 0; i < selection.length; i++) {
         selection[i].style.color = '#000000';
-        if (p1 != "skill-card") {
-            selection[i].style.backgroundColor = '#FFFF00';
+        selection[i].style.backgroundColor = '#FFFF00';
+    }
+}
+
+// Resets a given button's color
+function resetButton(selectedButton) {
+    selectedButton.style.backgroundColor = '#3C99DC';
+    selectedButton.style.fontWeight = "normal";
+}
+
+function colorButton(selectedButton) {
+    selectedButton.style.backgroundColor = "#3572F2";
+    selectedButton.style.fontWeight = "bold";
+}
+
+// Resets all non-selected buttons. Toggles and returns the selected button.
+function toggleButtons(p1) {
+    buttonCollection = document.getElementsByClassName('skill-button');
+    let returnButton;
+    for (let i = 0; i < buttonCollection.length; i++) {
+        selectedButton = buttonCollection[i];
+        if (selectedButton.id == "button-" + p1) {
+            returnButton = selectedButton;
+            returnButton.classList.toggle(IS_PRESSED);
+        } else {
+            if (selectedButton.classList.contains(IS_PRESSED)) {
+                selectedButton.classList.remove(IS_PRESSED);
+                resetButton(selectedButton);
+            }
         }
     }
+    return returnButton;
+}
 
-    //change selected button
-    buttonSelection = "button-skills";
-    switch (p1) {
-        case 'skill-card':
-            buttonSelection = "button-skills";
-            break;
-        case 'programming':
-            buttonSelection = "button-programming";
-            break;
-        case 'webdev':
-            buttonSelection = "button-webdev";
-            break;
-        case 'design':
-            buttonSelection = "button-design";
-            break;
-        case 'development':
-            buttonSelection = "button-enterprise";
-            break;
-        case 'database':
-            buttonSelection = "button-databases";
-            break;
-        case 'research':
-            buttonSelection = "button-research";
-            break;
-        case 'zombies':
-            buttonSelection = "button-zombie";
-            break;
+// Button selection in skills section
+function selectionToggle(p1) {
+    resetCards();
+
+    selectedButton = toggleButtons(p1);
+    if (selectedButton.classList.contains(IS_PRESSED)) {
+        colorButton(selectedButton);
+        colorCards(p1);
+    } else {
+        resetButton(selectedButton);
     }
-
-    let button = document.getElementById(buttonSelection);
-    button.style.backgroundColor = "#3572F2";
-    button.style.fontWeight = "bold";
 }

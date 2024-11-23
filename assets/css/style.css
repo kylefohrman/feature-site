@@ -502,7 +502,7 @@ nav ul li {
   min-width: 400px;
 }
 
-.skill-buttons {
+.skill-header {
   min-width: 500px;
   margin: 0 auto;
   display: grid;
@@ -767,7 +767,7 @@ footer {
     flex: 0;
   }
 
-  .skill-buttons {
+  .skill-header {
     min-width: 350px;
     margin: 0 auto;
     display: grid;
