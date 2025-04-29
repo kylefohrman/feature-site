@@ -27,17 +27,17 @@ var germanText = {
     'english': `<p><b>German (High German)</b></p>\
     <p><i>Self-study via the Goethe Institute</i></p>\
     <p>Advanced Working Proficiency</p>\
-    <p>Since 2022</p>\
+    <p>Since 2021</p>\
     <p class="btn" id="german-button" onclick="changeText('german')">Try it out</p>`,
     'spanish': `<p><b>Alemán (alto alemán)</b></p>\
     <p><i>Autoaprendizaje a través del Goethe-Institut</i></p>\
     <p>Dominio avanzado del idioma</p>\
-    <p>Desde 2022</p>\
+    <p>Desde 2021</p>\
     <p class="btn" id="german-button" onclick="changeText('german')">Pruébalo</p>`,
     'german': `<p><b>Deutsch (Hochdeutsch)</b></p>\
     <p><i>Selbststudium am Goethe-Institut</i></p>\
     <p>Fortgeschrittene Sprachkenntnisse</p>\
-    <p>Seit 2022</p>\
+    <p>Seit 2021</p>\
     <p class="btn" id="german-button" onclick="changeText('german')">Versuch es</p>`
 }
 
